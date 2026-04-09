@@ -1,1 +1,2 @@
-Invalid point format: 11, expected format: x,y
+coordinate should be in format X,Y
+exit status 1

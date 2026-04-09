@@ -1,0 +1,1 @@
+go run ../cmd/app solve --algorithm=astar --file=cases/5_check_optimal_path_choice/maze.txt --start=1,2 --end=7,2 --output=tmp/5_check_optimal_path_choice.txt

@@ -1,0 +1,1 @@
+rm -f tmp/5_check_optimal_path_choice.txt
