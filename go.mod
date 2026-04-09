@@ -1,3 +1,3 @@
-module gitlab.education.tbank.ru/backend-academy-go-2025/homeworks/hw2-labyrinths
+module github.com/tipo-tawerka/maze-generator
 
 go 1.25.0
