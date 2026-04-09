@@ -26,7 +26,7 @@
 
 Основные тестовые сценарии:
 - [Проверка вывода справки](tests/cases/1_check_help) - проверяется полнота справки при использовании флага *--help*.
-- [Проверка валидации](tests/cases/2_check_point_validation) - проверяется корректность валидации значения точки *start* в команде *solve*.
+- [Проверка валидации](tests/cases/2_check_point_validation) - проверяется корректность валидации значения точки *Start* в команде *solve*.
 - [Генерация лабиринта](tests/cases/3_check_maze_generation) - проверяется сохранение вырожденного лабиринта 1x1 в файл.
 - [Решение лабиринта](tests/cases/4_check_maze_solving) - проверяется корректное решение заранее заданного лабиринта алгоритмом *A-star* и сохранение решения в файл.
 
@@ -54,8 +54,8 @@
 ```bash
 go run ./cmd/app generate --algorithm=dfs --width=10 --height=10 --output=maze1.txt
 go run ./cmd/app generate --algorithm=prim --width=10 --height=10 --output=maze2.txt
-go run ./cmd/app solve --algorithm=astar --file=maze1.txt --start=0,0 --end=9,9 --output=solution_maze1.txt
-go run ./cmd/app solve --algorithm=dijkstra --file=maze2.txt --start=0,0 --end=9,9 --output=solution_maze2.txt
+go run ./cmd/app solve --algorithm=astar --file=maze1.txt --Start=0,0 --end=9,9 --output=solution_maze1.txt
+go run ./cmd/app solve --algorithm=dijkstra --file=maze2.txt --Start=0,0 --end=9,9 --output=solution_maze2.txt
 ```
 
 ### Формат файла с лабиринтом

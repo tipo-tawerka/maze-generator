@@ -11,5 +11,11 @@ build:
 ## test: run all tests
 .PHONY: test
 test:
-	@go test -coverpkg='github.com/es-debug/backend-academy-2024-go-template/...' --race -count=1 -coverprofile='$(COVERAGE_FILE)' ./...
+	@go test --race -count=1 -coverprofile='$(COVERAGE_FILE)' ./...
 	@go tool cover -func='$(COVERAGE_FILE)' | grep ^total | tr -s '\t'
+
+## lint: run golangci-lint
+.PHONY: lint
+lint:
+	@echo "Выполняется линтинг с golangci-lint"
+	@golangci-lint run
